@@ -1,4 +1,4 @@
-#PCB-component-recognition
+#PCB-component-recognition#
 Electronic Components Classification
 This project aims to classify various electronic components (ECs) using a deep learning model based on the InceptionV3 architecture. The model is trained to identify different types of electronic components from images. The database with labeled images of various ECs on PCBs can be found here.
 
