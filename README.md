@@ -23,9 +23,10 @@ The InceptionV3 model is used as the base, pre-trained on ImageNet.
 The input shape is (299, 299, 3), which is the expected input size for InceptionV3.
 The top layers of InceptionV3 are excluded (include_top=False).
 All layers of the base model are set to non-trainable to leverage the pre-trained weights.
-Global Average Pooling Layer:
 
-### A GlobalAveragePooling2D layer is added on top of the base model to reduce the spatial dimensions of the output.
+### Global Average Pooling Layer:
+
+A GlobalAveragePooling2D layer is added on top of the base model to reduce the spatial dimensions of the output.
 Dense Layer:
 A dense layer with 128 units and ReLU activation function is added.
 L2 regularization with a factor of 0.00066172 is applied to the kernel to prevent overfitting.
@@ -36,10 +37,10 @@ A dense layer with 1 unit and sigmoid activation function is added to produce th
 Model Compilation
 The model is compiled using the Adam optimizer with a learning rate of 0.001. The loss function used is binary cross-entropy, and the evaluation metric is accuracy.
 
-###Training
+### Training
 The model is trained for 20 epochs with a batch size of 32. Class weights are computed to handle class imbalance and are used during training. The training process includes validation on a separate validation set to monitor the model's performance.
 
-###Evaluation
+### Evaluation
 The model is evaluated on a test set, and the following metrics are reported:
 
 Test Accuracy: The accuracy of the model on the test set.
