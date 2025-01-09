@@ -1,7 +1,7 @@
 # PCB-component-recognition
 
 ## Electronic Components Classification
-This project aims to classify various electronic components (ECs) using a deep learning model based on the InceptionV3 architecture. The model is trained to identify different types of electronic components from images. The database with labeled images of various ECs on PCBs can be found [here](https://universe.roboflow.com/roboflow-100/printed-circuit-board).
+This project aims to classify various images of printed circuit-boards (PCBs) depending on the nature of electronic components (ECs) attached to their surfaces, using a deep learning model based on the InceptionV3 architecture. The model is trained to identify different types of ECs from images of PCBs. The database with labeled images of various ECs on PCBs can be found [here](https://universe.roboflow.com/roboflow-100/printed-circuit-board).
 
 
 ## Introduction
@@ -59,4 +59,4 @@ Model Evaluation: The model is evaluated on the test set, and evaluation metrics
 
 ## Results
 
-Accuracy of classification is dependent on the nature of the EC considered. It remains relatively accurate for  
+Accuracy of classification is highly-dependent on the nature of the EC considered. High precision and recall can be reached for some components, with minor false positives and negatives, but accuracy drops for some components.   
